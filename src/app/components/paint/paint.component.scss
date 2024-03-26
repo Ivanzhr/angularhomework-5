@@ -1,0 +1,59 @@
+.paint__item {
+    width: 60%;
+    margin: 20px auto;
+    position: relative;
+    
+    img {
+        width: 100%;
+    }
+
+    .main {
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 3em;
+        color: #000;
+        position: absolute;
+        top: -18px;
+        right: -40px;
+        transform: rotate(45deg);
+    }
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        margin: 15px;
+    }
+    .decs {
+        margin-top: 15px;
+        text-align: center;
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+    }
+
+    
+
+    .moreAuthors {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        .moreAuthor {
+            img {
+                width: 200px;
+            }
+
+            a {
+                display: block;
+                margin: 5px auto;
+                width: 30%;
+                text-align: center;
+                text-decoration: none;
+                padding: 5px;
+                color: #000;
+                background-color: #d0cdcd;
+                border-radius: 10%;
+            }
+        }
+    }
+}

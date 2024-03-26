@@ -1,0 +1,20 @@
+<div class="paint__item">
+    <img src="{{painting.img}}" alt="">
+    <div class="decs">
+        <div class="title">{{painting.title}}</div>
+
+        <div class="author">Автор: {{painting.author}}</div>
+        <div class="year">Рік: {{painting.year}}</div>
+
+        <div class="dimensions">Розміри: {{painting.dimensions}}</div>
+        <div class="location">Місце розташування: {{painting.location}}</div>
+    </div>
+    <a routerLink="/gallery" class="main">+</a>
+    <h1>more paintings by this author</h1>
+    <div class="moreAuthors">
+        <div class="moreAuthor" *ngFor="let paint of paintAuthorItem">
+            <img src="{{paint.img}}" alt="">
+            <a routerLink="/gallery_item/{{paint.id}}">more</a>
+        </div>
+    </div>
+</div>

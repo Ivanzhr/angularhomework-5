@@ -1,0 +1,6 @@
+<div class="gallery">
+    <div class="gallery__item" *ngFor="let painting of paintings">
+        <img src="{{painting.img}}" alt="">
+        <a routerLink="/gallery_item/{{painting.id}}">more</a>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+.gallery {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+    .gallery__item {
+        background-color: #ececec;
+        width: 300px;
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            display: block;
+            margin: 5px auto;
+            width: 30%;
+            text-align: center;
+            text-decoration: none;
+            padding: 5px;
+            color: #000;
+            background-color: #d0cdcd;
+            border-radius: 10%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
